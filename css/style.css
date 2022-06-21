@@ -1,0 +1,74 @@
+:root {
+  --azul: #3ea1db;
+  --azul-dark: #574ae8;
+  --branco: #fff;
+
+  --titulo: #313131;
+  --texto: #b6b6b6;
+
+  --gradiente: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header-bg {
+  background: var(--gradiente);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 0;
+}
+
+.header {
+  width: 900px;
+}
+
+.header .header-texto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.header .header-texto h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--branco);
+}
+
+.header .header-texto p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--branco);
+}
+
+.header .header-input {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.header .header-input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 1rem;
+  color: var(--branco);
+}
+
+.header .header-input input::placeholder {
+  color: var(--texto);
+}
